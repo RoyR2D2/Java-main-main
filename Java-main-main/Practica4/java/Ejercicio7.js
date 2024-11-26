@@ -1,5 +1,10 @@
-var numero
-while(numero != 0) {
+var numero;
+while (true) {
     numero = prompt("Introduzca un numero");
-    document.writeln(numero + " ")
-}
+    numero = parseInt(numero)
+    if (numero == 0){
+        break;
+    }
+    document.writeln(numero + " ");
+   
+} 
