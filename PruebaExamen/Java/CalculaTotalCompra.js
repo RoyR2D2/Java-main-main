@@ -1,12 +1,15 @@
-var precioArticulo;
-precioArticulo 
+var precioArticulo = 1;
+var suma = 0;
 while(precioArticulo != 0) {
     precioArticulo = prompt("Introduzca el precio del articulo:");
-    alert(precioArticulo)
-    if(isNaN(precioArticulo))
-        alert("Ha habido un error introduzca un numero")
-    if(precioArticulo < 0){
-        alert("No se permiten numeros negativos")
-    }
+    precioArticulo = parseInt(precioArticulo);
+    alert(precioArticulo);
+    if(isNaN(precioArticulo)) {
+        alert("Ha habido un error introduzca un numero");
+    }else if(precioArticulo < 0){
+        alert("No se permiten numeros negativos");
+    } else {
+        suma = suma + precioArticulo;
+    }    
 }
-alert("El total de su compra ha sido:" + precioArticulo)
+document.writeln("El total de su compra ha sido:" + suma);
