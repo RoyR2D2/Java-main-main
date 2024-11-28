@@ -14,5 +14,7 @@ var i;
 var producto = 1;
 for(i = 1;i <10;i++) {
     producto = producto * i;
+
 } 
+document.writeln(i = producto + "<br>")
 document.writeln("El resultado es:" + producto);
