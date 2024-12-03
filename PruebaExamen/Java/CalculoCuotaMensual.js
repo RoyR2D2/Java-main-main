@@ -4,7 +4,7 @@ var descuento
 if(horario == "mañana") {
     alert("Su cuota es de 25 euros")
 } else if(horario == "tarde") {
-    alert("Su cuora es de 45 euros")
+    alert("Su cuota es de 45 euros")
 } else {
     alert("Su cuota es de 55 euros")
 }
